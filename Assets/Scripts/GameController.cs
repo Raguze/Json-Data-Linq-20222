@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DTO;
 using System.IO;
+using System.Linq;
 
 public class GameController : MonoBehaviour
 {
@@ -69,6 +70,42 @@ public class GameController : MonoBehaviour
         {
             LoadJson();
         }
+
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Query1("China");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Query2("China");
+        }
+    }
+
+    private void Query1(string country)
+    {
+        var result = playersData.players
+            .Where(player => player.country == country)
+            .Select(player => new { player.name,player.email})
+            .ToList();
+        
+        ToHud(result.AllToString());
+    }
+
+    private void Query2(string country)
+    {
+        var result = playersData.players
+            .Where(player => player.country == country)
+            .OrderByDescending(player => player.points)
+            .Select(player => new { player.name, player.points })
+            .ToList();
+
+        ToHud(result.AllToString());
+    }
+
+    private void ToHud(string value)
+    {
+        GameEvents.OnHudText.Invoke(value);
     }
 
     private void LoadJson()
@@ -76,6 +113,6 @@ public class GameController : MonoBehaviour
         var json = Resources.Load<TextAsset>("data/data");
         Debug.Log(json.text);
         playersData = JsonUtility.FromJson<PlayersData>(json.text);
-        Debug.Log(playersData.Players.Count);
+        Debug.Log(playersData.players.Count);
     }
 }

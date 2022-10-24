@@ -6,5 +6,5 @@ using DTO;
 [System.Serializable]
 public class PlayersData
 {
-    public List<Player> Players;
+    public List<Player> players;
 }

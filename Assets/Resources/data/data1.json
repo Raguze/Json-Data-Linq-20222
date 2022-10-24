@@ -1,0 +1,80 @@
+{
+    "players": [
+     {
+      "id": 0,
+      "name": "Katelynn Medhurst",
+      "email": "Katelynn_Medhurst85@hotmail.com",
+      "username": "Katelynn_Medhurst",
+      "points": 6458,
+      "platformIndex": 1,
+      "platformName": "XBOX",
+      "country": "Jamaica",
+      "heroes": [
+       {
+        "id": 0,
+        "name": "Donny_Hoppe",
+        "level": 96,
+        "heroClassIndex": 0,
+        "heroClassName": "Barbarian",
+        "gold": 8121687452
+       },
+       {
+        "id": 1,
+        "name": "Kenyon_Huel7",
+        "level": 48,
+        "heroClassIndex": 4,
+        "heroClassName": "Necromancer",
+        "gold": 3373962278
+       },
+       {
+        "id": 2,
+        "name": "Aiyana_Hills77",
+        "level": 65,
+        "heroClassIndex": 0,
+        "heroClassName": "Barbarian",
+        "gold": 1403508633
+       },
+       {
+        "id": 3,
+        "name": "Wilford_Krajcik46",
+        "level": 87,
+        "heroClassIndex": 6,
+        "heroClassName": "Wizard",
+        "gold": 5204775283
+       },
+       {
+        "id": 4,
+        "name": "Billy_Reichel",
+        "level": 68,
+        "heroClassIndex": 6,
+        "heroClassName": "Wizard",
+        "gold": 1433533710
+       },
+       {
+        "id": 5,
+        "name": "Nina41",
+        "level": 94,
+        "heroClassIndex": 4,
+        "heroClassName": "Necromancer",
+        "gold": 4736004753
+       },
+       {
+        "id": 6,
+        "name": "Ona.Rippin",
+        "level": 19,
+        "heroClassIndex": 2,
+        "heroClassName": "Demon Hunter",
+        "gold": 5684339914
+       },
+       {
+        "id": 7,
+        "name": "Enrique61",
+        "level": 2,
+        "heroClassIndex": 1,
+        "heroClassName": "Crusader",
+        "gold": 2223214632
+       }
+      ]
+     }
+    ]
+}

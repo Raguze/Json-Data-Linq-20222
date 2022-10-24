@@ -16,5 +16,10 @@ namespace DTO
         public int platformIndex;
         public string platformName;
         public string country;
+
+        public override string ToString()
+        {
+            return $"DTO.Player {name} {country} {id} {email} {username} {points} {platformName}";
+        }
     }
 }
